@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>icons/nextBtn.png</file>
+        <file>icons/playBtn.png</file>
+        <file>icons/previousBtn.png</file>
+        <file>icons/stopBtn.png</file>
+        <file>relicons/NextButton_</file>
+        <file>relicons/PlayButton_</file>
+        <file>relicons/PreviousButton_</file>
+        <file>relicons/StopButton_</file>
+    </qresource>
+</RCC>

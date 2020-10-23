@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 
+#include <QMediaPlayer>
+#include <QFileDialog>
+#include <QSlider>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -15,7 +19,24 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+
+
+    void on_actionPlay_triggered();
+
+    void on_actionStop_triggered();
+
+    void on_actionNext_triggered();
+
+    void on_actionPrevious_triggered();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QMediaPlayer* player;
+    QSlider* slider;
+
+
 };
 #endif // MAINWINDOW_H
