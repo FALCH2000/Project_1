@@ -36,6 +36,7 @@ private:
     Ui::MainWindow *ui;
     QMediaPlayer* player;
     QSlider* slider;
+    void setInterfaceStyle();
 
 
 };

@@ -5,9 +5,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
-    ui->frame->setStyleSheet("background-color: #1D1E2C");
-    ui->listView->setStyleSheet("background-color: #0B253A");
+    setInterfaceStyle();
 
     player= new QMediaPlayer(this);
     slider= ui->horizontalSlider;
@@ -15,6 +13,12 @@ MainWindow::MainWindow(QWidget *parent)
     connect(player, &QMediaPlayer::positionChanged, slider, &QSlider::setValue);
     connect(slider, &QSlider::sliderMoved,player,&QMediaPlayer::setPosition);
 
+}
+void MainWindow::setInterfaceStyle(){
+    ui->setupUi(this);
+    ui->frame->setStyleSheet("background-color: #1D1E2C");
+    ui->ArtistView_Button->setStyleSheet("background-color: #0B253A");
+    ui->SongsView_Button->setStyleSheet("background-color: #0B253A");
 }
 
 MainWindow::~MainWindow()
