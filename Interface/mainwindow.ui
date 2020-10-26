@@ -42,24 +42,6 @@
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="ArtistView_Button">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>10</y>
-       <width>130</width>
-       <height>29</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Tlwg Typewriter</family>
-      </font>
-     </property>
-     <property name="text">
-      <string>Artists View</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="SongsView_Button">
      <property name="geometry">
       <rect>
@@ -142,19 +124,6 @@
       </rect>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>440</y>
-       <width>118</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="value">
-      <number>24</number>
-     </property>
-    </widget>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
@@ -171,6 +140,26 @@
      </property>
      <property name="text">
       <string>Memory Usage</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Memory_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>450</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tlwg Typist</family>
+       <pointsize>15</pointsize>
+       <italic>false</italic>
+      </font>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
      </property>
     </widget>
    </widget>

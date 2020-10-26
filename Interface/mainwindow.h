@@ -6,6 +6,7 @@
 #include <QMediaPlayer>
 #include <QFileDialog>
 #include <QSlider>
+#include "memoryusage.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -37,6 +38,7 @@ private:
     QMediaPlayer* player;
     QSlider* slider;
     void setInterfaceStyle();
+    MemoryUsage* memoryUsage;
 
 
 };
