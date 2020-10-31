@@ -39,7 +39,5 @@ private:
     QSlider* slider;
     void setInterfaceStyle();
     MemoryUsage* memoryUsage;
-
-
 };
 #endif // MAINWINDOW_H
